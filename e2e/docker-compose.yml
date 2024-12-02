@@ -1,0 +1,12 @@
+---
+services:
+  playwright-test:
+    image: pw-test
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    entrypoint: npm
+    command: run test
+    volumes:
+      - ./playwright-report/:/app/playwright-report
+      - ./test-results/:/app/test-results
