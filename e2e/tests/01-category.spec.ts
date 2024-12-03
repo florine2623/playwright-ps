@@ -9,7 +9,7 @@ test('Go to Categories page', async ({ page }) => {
   // await page.locator('#submit_login').click();
   await page.getByRole('button', {name: 'Log in'}).click();
 
-  //nouveau commentaire ici !!!
+  //nouveau commentaire ici !!! hello de florine
   //I prefere MINE Aurelien
   //DASHBORD
   await expect(page.locator('.page-title')).toHaveText('Dashboard', {timeout: 5000});
