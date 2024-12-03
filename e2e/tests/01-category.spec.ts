@@ -34,5 +34,4 @@ test('Go to Categories page', async ({ page }) => {
   //general assertion
   const categoryLabel = await page.locator('#tr_6_7_0').locator('.column-name').textContent();
   expect(categoryLabel).toContain('Stationery')
-
 });
