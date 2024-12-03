@@ -26,7 +26,7 @@ test('Go to Categories page', async ({ page }) => {
 
   //parent
   const parent = page.locator('tr', {hasText: "Accessories"}).locator('[data-original-title=View]');
-  await parent.click();
+  await parent.click(); 
 
   await expect(page.locator('tr', {hasText: "Stationery"})).toBeAttached();
 
