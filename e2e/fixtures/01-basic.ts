@@ -5,7 +5,7 @@ export type BasicFixture = {
     navigateTo: string
 }
 
-
+//test commentaire
 export const basic = base.extend<BasicFixture>({
     navigateTo: async ({page}, use) =>{
         await page.goto('http://localhost:8000/admin-dev/');
